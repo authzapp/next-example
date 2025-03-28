@@ -7,18 +7,12 @@ export default async function Home() {
 
     const session = await auth();
 
-    return (
+    return session?.user ? (
         <div>
-
-            {session?.user ? (
-                <div>
-                    <pre>{JSON.stringify(session.user, null, ' ')}</pre>
-                    <LogoutButton/>
-                </div>
-            ) : (
-                <LoginButton/>
-            )}
-
+            <pre>{JSON.stringify(session.user, null, ' ')}</pre>
+            <LogoutButton/>
         </div>
+    ) : (
+        <LoginButton/>
     );
 }
