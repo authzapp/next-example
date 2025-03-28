@@ -18,7 +18,9 @@ export default function Provider() {
             authorizer: {label: "Authorizer", type: "text"}
         },
         async authorize(credentials) {
-            const response = await fetch(`https://authzapp.com/api/login`, {
+
+            const url = `https://authzapp.com/api/login`;
+            const response = await fetch(url, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -41,6 +43,7 @@ export default function Provider() {
 
             // TODO: create or update your user table
             // TODO: add your custom validation to allow or deny user login
+            // TODO: start your user session
 
             return user;
         }

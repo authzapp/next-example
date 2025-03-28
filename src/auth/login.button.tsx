@@ -1,6 +1,13 @@
+import Link from "next/link";
+
 export function LoginButton() {
 
-    return <a className="btn-login" href={`https://authzapp.com/authorize/${process.env.AZ_APP_KEY}`}>
+    const key = process.env.AZ_APP_KEY;
+
+    return <Link
+        className="btn-login"
+        href={`https://authzapp.com/authorize/${key}`}
+    >
         Login with WhatsApp
-    </a>;
+    </Link>;
 }
