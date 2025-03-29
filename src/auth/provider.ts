@@ -2,7 +2,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import {CredentialsSignin} from "next-auth";
 
 type AZUser = {
-    uuid: string,
+    aid: string,
     name: string,
     phone: string,
     email: string,
