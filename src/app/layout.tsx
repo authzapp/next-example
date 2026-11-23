@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 export const metadata: Metadata = {
-  title: "OfficeUp · Login com WhatsApp",
+  title: "Exemplo AuthZapp · Login com WhatsApp",
   description: "Exemplo mínimo de integração com o AuthZapp.",
   referrer: "no-referrer", robots: { index: false, follow: false },
 };

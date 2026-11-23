@@ -57,7 +57,7 @@ export function Login({ initialPhone }: { initialPhone: string | null }) {
     catch { setError("Não foi possível sair. Tente novamente."); setBusy(false); }
   }
   return <section>
-    <h1>OfficeUp</h1>
+    <h1>Exemplo AuthZapp</h1>
     {phone ? <>
       <p role="status">Você entrou com WhatsApp.</p>
       <p className="phone">{phone}</p>

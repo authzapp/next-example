@@ -1,4 +1,4 @@
-# OfficeUp — exemplo mínimo do AuthZapp
+# Exemplo AuthZapp — exemplo mínimo do AuthZapp
 
 Uma tela com QR Code, botão **Entrar com WhatsApp** e confirmação automática.
 Depois do login, mostra somente o telefone verificado e **Sair**.
