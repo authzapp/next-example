@@ -75,8 +75,10 @@ export function Login({ initialPhone }: { initialPhone: string | null }) {
       <h1>App Example</h1>
     </header>
     {phone ? <>
-      <p role="status">Você entrou com WhatsApp.</p>
-      <p className="phone">{phone}</p>
+      <div className="session-card" role="status">
+        <div className="session-card-header">Você entrou com WhatsApp</div>
+        <p className="phone">{phone}</p>
+      </div>
       <button onClick={logout} disabled={busy}>Sair</button>
     </> : <>
       <p className="instructions">Use <span>sua câmera</span> para escanear o QR Code ou <span>clique no botão</span> de login.</p>
