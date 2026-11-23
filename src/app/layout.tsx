@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import "./globals.css";
 export const metadata: Metadata = {
-  title: "AuthZapp · Exemplo de login com WhatsApp",
+  title: "App Example · Login com WhatsApp",
   description: "Exemplo mínimo de integração com o AuthZapp.",
   referrer: "no-referrer", robots: { index: false, follow: false },
 };
