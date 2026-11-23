@@ -67,8 +67,10 @@ export function Login({ initialPhone }: { initialPhone: string | null }) {
   return <section>
     <header>
       <svg className="logo" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-        <path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32H4.0315C1.80496 32 0 30.195 0 27.9685V16Z" fill="#58A316" />
-        <path d="M9.5 24V22.0296L16.6098 12.558H9.80183V10H20.2988V11.9704L13.2058 21.442H20.5V24H9.5Z" fill="white" />
+        <rect x="3" y="3" width="11" height="11" rx="3" fill="#58A316" />
+        <rect x="18" y="3" width="11" height="11" rx="3" fill="#58A316" />
+        <rect x="3" y="18" width="11" height="11" rx="3" fill="#58A316" />
+        <rect x="18" y="18" width="11" height="11" rx="3" fill="#58A316" />
       </svg>
       <h1>App Example</h1>
     </header>
