@@ -11,19 +11,17 @@ header { display: flex; flex-direction: column; align-items: center; gap: 10px; 
 h1 { font-family: 'Funnel Display', sans-serif; font-size: 36px; line-height: 40px; font-weight: 700; margin: 0; }
 p { color: #a1a1aa; line-height: 1.5; font-size: 14px; }
 .instructions { margin: 0 0 16px; }
-.instructions span { color: #58a316; }
+.instructions span { color: #60a5fa; }
 .qr-block { width: 100%; margin-bottom: 16px; }
 .qr { display: block; width: 100%; height: auto; aspect-ratio: 1; }
 .progress { height: 4px; width: 100%; background: #27272a; overflow: hidden; }
-.progress > div { height: 100%; background: #58a316; transition: width 1s linear; }
-.button, button { display: flex; align-items: center; justify-content: center; gap: 12px; width: 100%; min-height: 48px; border: 0; border-radius: 6px; padding: 10px 14px; background: #58a316; color: #fafafa; font: inherit; font-size: 14px; font-weight: 500; text-decoration: none; cursor: pointer; }
-.button:hover, button:hover { background: #65a30d; }
+.progress > div { height: 100%; background: #2563eb; transition: width 1s linear; }
+.button, button { display: flex; align-items: center; justify-content: center; gap: 12px; width: 100%; min-height: 48px; border: 0; border-radius: 6px; padding: 10px 14px; background: #2563eb; color: #fafafa; font: inherit; font-size: 14px; font-weight: 500; text-decoration: none; cursor: pointer; }
+.button:hover, button:hover { background: #1d4ed8; }
 button:disabled { opacity: .6; cursor: wait; }
-a:focus-visible, button:focus-visible { outline: 3px solid #a3cc80; outline-offset: 4px; }
+a:focus-visible, button:focus-visible { outline: 3px solid #93c5fd; outline-offset: 4px; }
 .note { font-size: 12px; margin: 16px 0 0; }
 .status { min-height: 23px; }
-.session-card { width: 100%; overflow: hidden; margin-bottom: 16px; border: 1px solid #404040; border-radius: 8px; background: #262626; }
-.session-card-header { padding: 12px 16px; border-bottom: 1px solid #404040; background: #363636; color: #e5e5e5; font-size: 14px; font-weight: 500; }
-.phone { margin: 0; padding: 24px 16px; color: #f2f2f2; font-size: 20px; text-align: center; overflow-wrap: anywhere; }
+.phone { font-size: 20px; color: #f2f2f2; }
 @media (max-width: 639px) { .logo { width: 50px; height: 50px; } }
 @media (prefers-reduced-motion: reduce) { .progress > div { transition: none; } }

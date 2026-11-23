@@ -67,18 +67,14 @@ export function Login({ initialPhone }: { initialPhone: string | null }) {
   return <section>
     <header>
       <svg className="logo" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-        <rect x="3" y="3" width="11" height="11" rx="3" fill="#58A316" />
-        <rect x="18" y="3" width="11" height="11" rx="3" fill="#58A316" />
-        <rect x="3" y="18" width="11" height="11" rx="3" fill="#58A316" />
-        <rect x="18" y="18" width="11" height="11" rx="3" fill="#58A316" />
+        <path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32H4.0315C1.80496 32 0 30.195 0 27.9685V16Z" fill="#2563EB" />
+        <path d="M9 24L14.2 10H17.8L23 24H19.8L18.8 21H13.2L12.2 24H9ZM14.1 18.4H17.9L16 12.7L14.1 18.4Z" fill="white" fillRule="evenodd" />
       </svg>
       <h1>App Example</h1>
     </header>
     {phone ? <>
-      <div className="session-card" role="status">
-        <div className="session-card-header">Você entrou com WhatsApp</div>
-        <p className="phone">{phone}</p>
-      </div>
+      <p role="status">Você entrou com WhatsApp.</p>
+      <p className="phone">{phone}</p>
       <button onClick={logout} disabled={busy}>Sair</button>
     </> : <>
       <p className="instructions">Use <span>sua câmera</span> para escanear o QR Code ou <span>clique no botão</span> de login.</p>
