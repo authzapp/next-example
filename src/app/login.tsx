@@ -78,7 +78,7 @@ export function Login({ initialPhone }: { initialPhone: string | null }) {
       <p className="phone">{phone}</p>
       <button onClick={logout} disabled={busy}>Sair</button>
     </> : <>
-      <p className="instructions">Use <span>sua câmera</span> para escanear o QR Code ou<br /><span>clique no botão</span> de login.</p>
+      <p className="instructions">Use <span>sua câmera</span> para escanear o QR Code ou <span>clique no botão</span> de login.</p>
       {busy ? <p className="status" role="status">Preparando seu login…</p> :
         expired ? <><p role="status">Este QR Code expirou.</p><button onClick={start}>Gerar novo QR Code</button></> :
         challenge ? <>
