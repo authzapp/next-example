@@ -1,62 +1,17 @@
-html,
-body {
-    max-width: 100vw;
-    overflow-x: hidden;
-}
-
-body {
-    background: #0a0a0a;
-    color: #ededed;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin: 0;
-    padding: 0;
-}
-
-.screen {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.screen pre {
-    display: block;
-    padding: 12px 20px;
-    background: #000;
-    border: 1px solid #222;
-    border-radius: 5px;
-    text-align: left;
-}
-
-.btn-back,
-.btn-login,
-.btn-logout {
-    margin-bottom: 10px;
-    padding: 12px 30px;
-    display: inline-block;
-    border: 1px solid #222;
-    border-radius: 30px;
-    font-weight: 500;
-    text-decoration: none;
-    background: none;
-    color: #ededed;
-    cursor: pointer;
-}
-
-.btn-login {
-    background: #90ee02;
-    color: #000;
-}
-
-.github {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-}
+:root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; color: #172b22; background: #fff; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { min-height: 100svh; display: grid; place-items: center; padding: 32px 24px; }
+section { width: 100%; max-width: 320px; text-align: center; }
+h1 { font-size: 30px; letter-spacing: -1px; margin: 0 0 12px; }
+p { color: #52645a; line-height: 1.55; font-size: 15px; }
+.qr { display: block; width: 240px; height: 240px; margin: 24px auto; }
+.button, button { display: block; width: 100%; border: 0; border-radius: 8px; padding: 14px 16px; background: #147d45; color: white; font: inherit; font-size: 15px; font-weight: 600; text-decoration: none; cursor: pointer; }
+.button:hover, button:hover { background: #106637; }
+button:disabled { opacity: .6; cursor: wait; }
+a:focus-visible, button:focus-visible { outline: 3px solid #51a679; outline-offset: 4px; }
+.note { font-size: 13px; margin-top: 18px; }
+.status { min-height: 23px; }
+.phone { font-size: 20px; color: #172b22; }
+footer { margin-top: 32px; font-size: 12px; color: #738179; }
+footer a { color: inherit; }

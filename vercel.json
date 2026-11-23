@@ -1,0 +1,3 @@
+{
+  "buildCommand": "node scripts/migrate.mjs && npm run build"
+}

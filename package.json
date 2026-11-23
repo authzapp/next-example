@@ -6,23 +6,29 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "npx vercel deploy"
+    "lint": "eslint src tests",
+    "test": "tsx --test tests/*.test.ts",
+    "db:migrate": "node --env-file-if-exists=.env.local scripts/migrate.mjs"
   },
   "dependencies": {
-    "next": "15.2.4",
-    "next-auth": "^5.0.0-beta.25",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@vercel/functions": "^3.11.3",
+    "next": "^15.5.29",
+    "pg": "^8.23.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "qrcode": "^1.5.4"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "^0.6.0",
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
+    "@types/pg": "^8.23.1",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.2.4",
+    "eslint-config-next": "^15.5.29",
+    "tsx": "^4.23.15",
     "typescript": "^5",
-    "vercel": "^41.4.1"
+    "@types/qrcode": "^1.5.5"
   }
 }
